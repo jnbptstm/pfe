@@ -18,4 +18,7 @@ ifconfig wlan0 192.168.1.2 netmask 255.255.255.0
 # Adding HWaddr of the 2nd RPI to permit ping:
 arp -s 192.168.1.3 80:1F:02:A6:A6:09
 
+# Adding default route:
+route add default gw 192.168.1.1 wlan0
+
 echo End of configuration.
