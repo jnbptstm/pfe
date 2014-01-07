@@ -11,7 +11,7 @@
 echo Starting configuration...
 
 ifconfig wlan0 down
-iwconfig wlan0 channel 1 essid pfe_network mode ad-hoc
+iwconfig wlan0 channel 1 essid Shared mode ad-hoc
 ifconfig wlan0 up
 ifconfig wlan0 192.168.1.2 netmask 255.255.255.0
 
