@@ -23,4 +23,6 @@ arp -s 192.168.1.2 80:1F:02:A6:A5:D8
 # Adding default route:
 route add default gw 192.168.1.1 wlan0
 
+# Nameserver has been added in /etc/resolv.conf (10.188.0.1)
+
 echo End of configuration.
