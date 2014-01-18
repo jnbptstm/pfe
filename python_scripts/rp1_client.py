@@ -29,6 +29,7 @@ diskSpaceToReserve = 40 * 1024 * 1024 # Keep 40 mb free on disk
 def kissAndFly():
 	# Connect a client socket to my_server:8000 (change my_server to the
 	# hostname of your server)
+	print("Fonction Kiss&Fly !")
 	client_socket = socket.socket()
 	client_socket.connect(('192.168.1.1', 8000))
 
@@ -46,6 +47,7 @@ def kissAndFly():
 		camera.wait_recording(60)
 		camera.stop_recording()
 	finally:
+		print("Fermeture connection")
 	    connection.close()
 	    client_socket.close()
 
@@ -62,6 +64,7 @@ def captureTestImage():
 
 # Save a full size image to disk
 def saveImage(width, height, diskSpaceToReserve):
+	print("Saving img...")
 	keepDiskSpaceFree(diskSpaceToReserve)
 	time = datetime.now()
 	filename = "capture-%04d%02d%02d-%02d%02d%02d.jpg" % (time.year, time.month, time.day, time.hour, time.minute, time.second)
@@ -106,6 +109,7 @@ while (True):
 
 	# Check force capture
 	if forceCapture:
+		print("Force capture")
 	    if time.time() - lastCapture > forceCaptureTime:
 		changedPixels = sensitivity + 1
 		   
