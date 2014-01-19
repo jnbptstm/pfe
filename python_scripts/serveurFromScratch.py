@@ -15,14 +15,14 @@ print "Client connected!"
 try:
 	# Initialisation of the camera
 	with picamera.PiCamera() as camera:
-	camera.resolution(640, 480)
-	camera.start_preview()
-	time.sleep(2)
+		camera.resolution(640, 480)
+		camera.start_preview()
+		time.sleep(2)
 
-	# Start recording, sending data on connected client
-	camera.start_recording(connection, format='mjpeg')
-	camera.wait_recording(60)
-	camera.stop_recording()
+		# Start recording, sending data on connected client
+		camera.start_recording(connection, format='mjpeg')
+		camera.wait_recording(60)
+		camera.stop_recording()
 finally:
 	connection.close()
 	server_socket.close()
