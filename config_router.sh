@@ -1,9 +1,10 @@
 # Configuration du réseau : 
 ifconfig eth1 down
+#iwconfig eth1 channel 1 essid Shared mode ad-hoc
 iwconfig eth1 mode ad-hoc
 iwconfig eth1 channel 1
 # iwconfig wlan0 key 1234567890
-iwconfig eth1 essid Shared
+iwconfig eth1 essid "Shared"
 ifconfig eth1 up
 ifconfig eth1 192.168.1.1 netmask 255.255.255.0
 # Configuration DHCP :
