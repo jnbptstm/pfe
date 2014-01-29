@@ -1,11 +1,11 @@
 #!/bin/bash
 
-##################################################################
-# This script configure the interface of the Raspberry Pi num. 2 #
-# This must be executed in su mode.                              #
-# -------------------------------------------------------------- #
-# TODO: making this configuration file generic.                  #
-##################################################################
+###########################################################################
+# This script configure the interface of the Raspberry Pi num. 2 (server) #
+# This must be executed in su mode.                                       #
+# ----------------------------------------------------------------------- #
+# TODO: making this configuration file generic.                           #
+###########################################################################
 
 echo Starting configuration...
 
