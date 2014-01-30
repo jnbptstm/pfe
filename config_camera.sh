@@ -15,7 +15,7 @@ ifconfig wlan0 up
 ifconfig wlan0 192.168.1.1 netmask 255.255.255.0
 
 # Adding HWaddr of the router to permit ping:
-arp -s 192.168.1.3 B8:27:EB:2F:06:0F
+arp -s 192.168.1.3 80:1F:02:A6:A6:09
 
 # Adding default route:
 route add default gw 192.168.1.3 wlan0
