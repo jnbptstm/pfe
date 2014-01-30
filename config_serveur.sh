@@ -23,7 +23,7 @@ arp -s 192.168.1.1 B8:27:EB:7E:15:22
 # Adding default route:
 route add default gw 192.168.1.1 wlan0
 
-ifconfig eth0 192.168.2.3 netmask 255.255.255.0
+ifconfig eth0 192.168.2.1 netmask 255.255.255.0
 # Nameserver has been added in /etc/resolv.conf (10.188.0.1)
 
 echo End of configuration.
